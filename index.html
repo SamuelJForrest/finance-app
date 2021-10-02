@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Finance App</title>
+  </head>
+  <body>
+    <nav><h1>Budge-it</h1></nav>
+
+    <main class="container">
+      <section class="display-container">
+        <article class="display">
+          <section class="balance">
+            <p>Balance</p>
+            <span class="balance-number">£450</span>
+          </section>
+        </article>
+
+        <article class="income-expenses">
+          <section class="income">
+            <p>Income</p>
+            <span class="income-number">£1,775</span>
+          </section>
+          <section class="expenses">
+            <p>Expenses</p>
+            <span class="expense-number">£1,315</span>
+          </section>
+        </article>
+      </section>
+
+      <article class="overview">
+        <h2>Overview</h2>
+        <section class="sorting">
+          <div class="options">
+            <p class="sort-btn sort-btn-active">All</p>
+            <p class="sort-btn">Income</p>
+            <p class="sort-btn">Expenses</p>
+          </div>
+          <img class="sort-btn-2" src="./img/Arrows.png" alt="sort button" />
+        </section>
+        <hr />
+        <section class="movements">
+          <div class="movement">
+            <p>Salary: £1,200</p>
+            <button class="delete-btn"></button>
+          </div>
+          <div class="movement">
+            <p>Freelancing: £500</p>
+            <button class="delete-btn"></button>
+          </div>
+        </section>
+        <hr />
+        <form action="">
+          <input class="name-input" type="text" placeholder="Name" />
+          <input class="number-input" type="number" placeholder="£0" />
+          <button class="submit-btn" type="submit">+</button>
+        </form>
+      </article>
+    </main>
+  </body>
+
+  <script src="./app.js"></script>
+</html>
